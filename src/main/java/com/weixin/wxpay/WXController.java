@@ -8,6 +8,7 @@ import com.weixin.sdk.WXPayUtil;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -103,9 +104,8 @@ public class WXController {
         return  ReponseMap.ok(result);
 
     }
-    @RequestMapping("/weixinLogin")
-    @ResponseBody
-    public void weixinLogin(HttpServletRequest request,HttpServletResponse response) throws Exception {
+    @RequestMapping("/weixinSignUp")
+    public String weixinSignUp(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
         // 用户同意授权后，能获取到code
         Map<String, String[]> params = request.getParameterMap();//针对get获取get参数
         String[] codes = params.get("code");//拿到code的值
@@ -126,17 +126,13 @@ public class WXController {
             // 获取用户信息
             SNSUserInfo snsUserInfo = getSNSUserInfo(accessToken, openId);
             System.out.println("***********************************用户信息unionId："+snsUserInfo.getUnionid()+"***:"+snsUserInfo.getNickname());
-            // 设置要传递的参数
+            model.addAttribute("openId",snsUserInfo.getOpenId());
+           /* String url = "http://wftest.zzff.net/#/biddd?from=login&tokenId="+snsUserInfo.getOpenId();
 
-            //具体业务start
+            response.sendRedirect(url);*/
 
-            //具体业务end
-
-            String url = "http://wftest.zzff.net/#/biddd?from=login&tokenId="+snsUserInfo.getOpenId();
-
-            response.sendRedirect(url);
-            return ;
         }
+        return "signup";
     }
     /**
      * 获取网页授权凭证

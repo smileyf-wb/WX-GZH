@@ -2,6 +2,9 @@ package com.weixin.common;
 
 import lombok.Data;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 
 public class Order {
    private String openId;
@@ -25,7 +28,10 @@ public class Order {
     }
 
     public String getTrade_no() {
-        return trade_no;
+        LocalDate localDate = LocalDate.now();
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyymmddhhmmss");
+        return localDate.format(dateTimeFormatter);
+
     }
 
     public void setTrade_no(String trade_no) {
