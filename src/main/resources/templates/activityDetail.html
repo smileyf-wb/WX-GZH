@@ -42,10 +42,43 @@
             </section>
         </article>
     </div>
-    <div class="page__ft">
-        <a href="javascript:home()"><img src="./images/icon_footer_link.png" /></a>
-    </div>
 </div>
+<div   class="button-sp-area cell" style="background-color: #A3A3A3" >
+    <div id = "activityPay"class="weui-btn_cell weui-btn_cell-primary" style="background-color: #CECECE" onclick="enter()" >报名</div>
+</div>
+<form id = "entered" action="/signup" style="display: none" method="post">
+    <input id ="trade_fee" name = "trade_fee" value="100"></input>
+</form>
 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script>
+
+    function enter(){
+        var enterForm = document.getElementById('entered');
+        $('#trade_fee').val('200')
+        enterForm.submit();
+    }
+    /*function enter() {
+
+        $
+            .ajax({
+                url : "/signup",
+                type : "POST",
+                dataType : "json",
+                data : JSON.stringify({
+                   "trade_fee" : "100"
+                }),
+                contentType : 'application/json',
+                success : function(response) {
+                    console.log("success")
+                },
+                error : function(err) {
+                    console.log(err)
+                }
+
+            })
+    }*/
+
+</script>
 </body>
 </html>
