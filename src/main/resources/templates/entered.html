@@ -42,8 +42,57 @@
     </div>
 
 </div>
+<p th:text=" ${error}">您已报名</p>
 <div   class="button-sp-area cell" style="background-color: #A3A3A3" >
-    <div id = "activityPay"class="weui-btn_cell weui-btn_cell-primary" style="background-color: #CECECE"  >支付</div>
+    <div id = "activityPay"class="weui-btn_cell weui-btn_cell-primary" style="background-color: #CECECE" onclick="payMoney()"  >支付</div>
 </div>
+
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/weixinpay.js"></script>
+<script>
+
+    function payMoney() {
+        $
+            .ajax({
+                url : "/order",
+                type : "POST",
+                dataType : "json",
+                data : JSON.stringify({
+                    "trade_fee" : "100",
+                    "openId":""
+                }),
+                contentType : 'application/json',
+                success : function(data) {
+                    var code = data.code;
+                    var prepay_id = data.package;
+                    console.log('prepay_id:'+prepay_id);
+                    if(code == 0){
+                        /调起微信支付控件进行支付
+                        if (typeof WeixinJSBridge == "undefined"){
+                            if( document.addEventListener ){
+                                document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+                            }else if (document.attachEvent){
+                                document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                                document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+                            }
+                        }else{
+                            onBridgeReady();
+                        }
+                    }else{
+                        var message = data.error;
+
+                    }
+
+                },
+                error : function(err) {
+                    console.log(err)
+                }
+
+            })
+    }
+
+
+    
+</script>
 </body>
 </html>

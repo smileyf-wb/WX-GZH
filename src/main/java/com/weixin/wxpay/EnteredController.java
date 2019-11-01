@@ -1,5 +1,6 @@
 package com.weixin.wxpay;
 import com.weixin.common.Order;
+import com.weixin.wxpay.security.CheckRepeatEntered;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,6 +12,7 @@ public class EnteredController {
      * 活动报名
      * @return
      */
+    @CheckRepeatEntered
     @RequestMapping("/signup")
     public String hello( Model model,Order order){
         /*String trade_fee = order.getTrade_fee();
@@ -24,8 +26,11 @@ public class EnteredController {
      * 活动详情
      * @return
      */
+
     @RequestMapping("/activityDetail")
     public String activity(){
         return "activityDetail";
     }
+
+
 }
