@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>活动报名</title>
+    <link rel="stylesheet" href="css/weui.css"/>
+</head>
+<body>
+<div class="page">
+    <div class="weui-form">
+        <div class="weui-form__text-area">
+            <h2 class="weui-form__title">活动报名</h2>
+        </div>
+        <div class="weui-form__control-area">
+            <div class="weui-cells__group weui-cells__group_form">
+                <div class="weui-cells__title">表单组标题</div>
+                <div class="weui-cells weui-cells_form">
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
+                        <div class="weui-cell__bd">
+                            <input id="name" class="weui-input" placeholder="填写本人姓名"/>
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd"><label class="weui-label">性别</label></div>
+                        <div class="weui-cell__bd">
+                            <input id="sex" class="weui-input" placeholder="男/女"/>
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd"><label class="weui-label">年级</label></div>
+                        <div class="weui-cell__bd">
+                            <input id="class_no" class="weui-input" placeholder="请填写班级" type="number" pattern="[0-9]*" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<p th:text=" ${error}">您已报名</p>
+<div   class="button-sp-area cell" style="background-color: #A3A3A3" >
+    <div id = "activityPay"class="weui-btn_cell weui-btn_cell-primary" style="background-color: #CECECE" onclick="payMoney()"  >支付</div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/weixinpay.js"></script>
+<script>
+
+    function payMoney() {
+        $
+            .ajax({
+                url : "/order",
+                type : "POST",
+                dataType : "json",
+                data : JSON.stringify({
+                    "trade_fee" : "100",
+                    "openId":""
+                }),
+                contentType : 'application/json',
+                success : function(data) {
+                    var code = data.code;
+                    var prepay_id = data.package;
+                    console.log('prepay_id:'+prepay_id);
+                    if(code == 0){
+                        /调起微信支付控件进行支付
+                        if (typeof WeixinJSBridge == "undefined"){
+                            if( document.addEventListener ){
+                                document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+                            }else if (document.attachEvent){
+                                document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                                document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+                            }
+                        }else{
+                            onBridgeReady();
+                        }
+                    }else{
+                        var message = data.error;
+
+                    }
+
+                },
+                error : function(err) {
+                    console.log(err)
+                }
+
+            })
+    }
+
+
+    
+</script>
+</body>
+</html>

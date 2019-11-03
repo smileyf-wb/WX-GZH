@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="803a0817-8946-41b5-a110-fe540306734b" name="Default" comment="">
+    <list default="true" id="0be12834-ff88-403a-bcba-65328b6d8980" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/common/FastJsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/common/HttpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/common/HttpServRequestHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/common/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/common/MoneyFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/common/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/common/RandomCodeHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/common/RegexUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/entity/EnteredDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/sdk/IWXPayDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayXmlUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/EnteredController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/filter/LogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/security/CheckRepeatEntered.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/security/CheckRepeatEnteredAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/service/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/weui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/weuix.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.12.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/weixinpay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/activityDetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/entered.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pay.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/HelloContrller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/WXController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/WXController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/WxpayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/WxpayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weixin/wxpay/HelloContrller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weixin/wxpay/WXController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weixin/wxpay/WXController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weixin/wxpay/WxpayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weixin/wxpay/WxpayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weixin/wxpay/task/TaskTimer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weixin/wxpay/task/TaskTimer.class" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,70 +58,116 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Oauth2Token.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/Oauth2Token.java">
+      <file leaf-file-name="EnteredController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/EnteredController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="157">
+              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NetUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/NetUtil.java">
+      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="147">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReponseMap.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/ReponseMap.java">
+      <file leaf-file-name="ServletInvocableHandlerMethod.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="147">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SNSUserInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/SNSUserInfo.java">
+      <file leaf-file-name="RequestMappingHandlerAdapter.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="291">
+              <caret line="484" selection-start-line="484" selection-end-line="484" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WXController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/WXController.java">
+      <file leaf-file-name="CglibAopProxy.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="255" selection-start-line="255" selection-end-line="255" />
+            <state relative-caret-position="147">
+              <caret line="481" selection-start-line="481" selection-end-line="481" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <file leaf-file-name="ExposeInvocationInterceptor.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="313" column="10" selection-start-line="313" selection-start-column="10" selection-end-line="313" selection-end-column="10" />
+            <state relative-caret-position="165">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="CheckRepeatEnteredAspect.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/security/CheckRepeatEnteredAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3312">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="423">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractAspectJAdvice.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="414" selection-start-line="414" selection-end-line="414" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AspectJAroundAdvice.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAroundAdvice.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReflectiveMethodInvocation.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SignType</find>
+      <find>redis</find>
+      <find>common</find>
+      <find>pool2</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>WXPayConstants.SignType</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,9 +175,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/HelloContrller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/com/weixin/common/SHA1Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/com/weixin/common/WXUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/common/SHA1Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/task/TaskTimer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/WxpayApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/TaskTimer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/task/TaskTimer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/common/MyBatisGeneratorUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/pay.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/WXController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/service/RedisService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/entity/EnteredDetail.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/entered.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weixin/wxpay/EnteredController.java" />
       </list>
     </option>
   </component>
@@ -100,6 +205,14 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/tool/work/maven/maven/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\tool\work\maven\maven\apache-maven-3.3.9\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
@@ -113,9 +226,12 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,28 +244,106 @@
               <item name="WXGZH" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="wxpay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WXGZH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxpay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WXGZH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxpay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WXGZH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxpay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WXGZH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxpay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WXGZH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wxpay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxpay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WXGZH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxpay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WXGZH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxpay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WXGZH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxpay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WXGZH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxpay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WXGZH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WxPayAPI_JAVA/java_sdk_v3.0.9" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.weixin.wxpay" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\programe\WXGZH\src\main\java\com\weixin\common" />
+      <recent name="F:\programe\WXGZH\src\main\resources\static\css" />
+      <recent name="D:\code\gzh\src\main\java\com\weixin\sdk" />
+      <recent name="D:\code\gzh\src\main\resources" />
+      <recent name="D:\code\gzh\src\main\java\com\weixin\common" />
+      <recent name="F:\programe\gzh\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -187,6 +381,7 @@
     <configuration name="WxpayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="wxpay" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.weixin.wxpay.WxpayApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -216,62 +411,74 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="803a0817-8946-41b5-a110-fe540306734b" name="Default" comment="" />
-      <created>1572353486255</created>
+      <changelist id="0be12834-ff88-403a-bcba-65328b6d8980" name="Default" comment="" />
+      <created>1572153820839</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572353486255</updated>
-      <workItem from="1572353489086" duration="372000" />
-      <workItem from="1572606988842" duration="95000" />
+      <updated>1572153820839</updated>
+      <workItem from="1572153823778" duration="1688000" />
+      <workItem from="1572159611218" duration="3326000" />
+      <workItem from="1572177820144" duration="1853000" />
+      <workItem from="1572222623225" duration="15085000" />
+      <workItem from="1572685124856" duration="4846000" />
+      <workItem from="1572745534059" duration="3597000" />
     </task>
-    <task id="LOCAL-00001" summary="网页授权，获取用户信息">
-      <created>1572353707166</created>
+    <task id="LOCAL-00001" summary="微信sdk集成">
+      <created>1572397144674</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1572353707166</updated>
+      <updated>1572397144674</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="微信sdk集成">
+      <created>1572397214142</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572397214142</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467000" />
+    <option name="totallyTimeSpent" value="31329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.09166667" side_tool="true" visible="true" weight="0.43822598" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.69166666" weight="0.44667372" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.5100317" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.036082473" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.5286458" weight="0.17423442" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.90833336" visible="true" weight="0.43822598" />
+      <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16041666" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16302083" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947917" weight="0.51953536" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,98 +488,479 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="网页授权，获取用户信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="网页授权，获取用户信息" />
+    <MESSAGE value="微信sdk集成" />
+    <option name="LAST_COMMIT_MESSAGE" value="微信sdk集成" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/EnteredController.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog>
+          <selected-grouping-rules>
+            <grouping-rule id="XBreakpointGroupingByClassRule" />
+          </selected-grouping-rules>
+        </breakpoints-dialog>
+      </breakpoints-dialog>
+      <option name="time" value="12" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>str</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/Oauth2Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/NetUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/ReponseMap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/WXUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/SNSUserInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/SHA1Util.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/task/TaskTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/WXController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9180">
-          <caret line="255" lean-forward="true" selection-start-line="255" selection-end-line="255" />
+        <state relative-caret-position="684">
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="2196">
+          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/NetUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/WxpayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="144">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/Oauth2Token.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/HelloContrller.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/ReponseMap.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2196">
+          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/WxpayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="57" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/HelloContrller.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/SHA1Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/WXUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/SNSUserInfo.java">
+    <entry file="uml://MAVEN/com.weixin:wxpay:0.0.1-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.weixin:wxpay:0.0.1-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.weixin:wxpay:0.0.1-SNAPSHOT</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.0.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.0.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3/ch.qos.logback:logback-core:jar:1.2.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.0.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.12.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.0.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.12.1/org.apache.logging.log4j:log4j-api:jar:2.12.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.0.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.28</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.0.RELEASE/jakarta.annotation:jakarta.annotation-api:jar:1.3.5</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.0.RELEASE/org.yaml:snakeyaml:jar:1.25</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.0.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.10.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.0.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.10.0/com.fasterxml.jackson.core:jackson-annotations:jar:2.10.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.0.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.10.0/com.fasterxml.jackson.core:jackson-core:jar:2.10.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.0.RELEASE/com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.10.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.0.RELEASE/com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.10.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.0.RELEASE/com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.10.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.0.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.27</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.0.RELEASE/org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.27</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.0.RELEASE/org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.27</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.0.RELEASE/jakarta.validation:jakarta.validation-api:jar:2.0.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.0.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.17.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.0.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.17.Final/org.jboss.logging:jboss-logging:jar:3.4.1.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.0.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.17.Final/com.fasterxml:classmate:jar:1.5.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework:spring-web:jar:5.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework:spring-web:jar:5.2.0.RELEASE/org.springframework:spring-beans:jar:5.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework:spring-webmvc:jar:5.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework:spring-webmvc:jar:5.2.0.RELEASE/org.springframework:spring-aop:jar:5.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework:spring-webmvc:jar:5.2.0.RELEASE/org.springframework:spring-context:jar:5.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.0.RELEASE/org.springframework:spring-webmvc:jar:5.2.0.RELEASE/org.springframework:spring-expression:jar:5.2.0.RELEASE</node>
+            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.1.1</node>
+            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.1.1/org.springframework.boot:spring-boot-starter-jdbc:jar:2.2.0.RELEASE</node>
+            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.1.1/org.springframework.boot:spring-boot-starter-jdbc:jar:2.2.0.RELEASE/com.zaxxer:HikariCP:jar:3.4.1</node>
+            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.1.1/org.springframework.boot:spring-boot-starter-jdbc:jar:2.2.0.RELEASE/org.springframework:spring-jdbc:jar:5.2.0.RELEASE</node>
+            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.1.1/org.springframework.boot:spring-boot-starter-jdbc:jar:2.2.0.RELEASE/org.springframework:spring-jdbc:jar:5.2.0.RELEASE/org.springframework:spring-tx:jar:5.2.0.RELEASE</node>
+            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.1.1/org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:jar:2.1.1</node>
+            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.1.1/org.mybatis:mybatis:jar:3.5.3</node>
+            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.1.1/org.mybatis:mybatis-spring:jar:2.0.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-devtools:jar:2.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-devtools:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot:jar:2.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-devtools:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:2.2.0.RELEASE</node>
+            <node x="" y="">mysql:mysql-connector-java:jar:8.0.18</node>
+            <node x="" y="">org.projectlombok:lombok:jar:1.18.10</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-test:jar:2.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.springframework.boot:spring-boot-test-autoconfigure:jar:2.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2/org.ow2.asm:asm:jar:5.0.4</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/org.slf4j:slf4j-api:jar:1.7.28</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.2/jakarta.activation:jakarta.activation-api:jar:1.2.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-api:jar:5.5.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-api:jar:5.5.2/org.apiguardian:apiguardian-api:jar:1.1.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-api:jar:5.5.2/org.opentest4j:opentest4j:jar:1.2.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-api:jar:5.5.2/org.junit.platform:junit-platform-commons:jar:1.5.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-params:jar:5.5.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-engine:jar:5.5.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-engine:jar:5.5.2/org.junit.platform:junit-platform-engine:jar:1.5.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.mockito:mockito-junit-jupiter:jar:3.1.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.assertj:assertj-core:jar:3.13.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.hamcrest:hamcrest:jar:2.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.mockito:mockito-core:jar:3.1.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.mockito:mockito-core:jar:3.1.0/net.bytebuddy:byte-buddy:jar:1.10.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.mockito:mockito-core:jar:3.1.0/net.bytebuddy:byte-buddy-agent:jar:1.10.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.mockito:mockito-core:jar:3.1.0/org.objenesis:objenesis:jar:2.6</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0/com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.springframework:spring-core:jar:5.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.springframework:spring-core:jar:5.2.0.RELEASE/org.springframework:spring-jcl:jar:5.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.springframework:spring-test:jar:5.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.0.RELEASE/org.xmlunit:xmlunit-core:jar:2.6.3</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.30476818281696333" x="2266.0" y="536.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/HelloContrller.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/common/MyBatisGeneratorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/task/TaskTimer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="23" column="60" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1507">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-535">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/sdk/IWXPayDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/sdk/WXPayXmlUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/security/CheckRepeatEntered.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/sun/nio/ch/WindowsSelectorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15336">
+          <caret line="453" column="27" selection-start-line="453" selection-start-column="27" selection-end-line="453" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/weuix.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2772">
+          <caret line="2" column="75838" selection-start-line="2" selection-start-column="75838" selection-end-line="2" selection-end-column="75838" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/weixinpay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/WxpayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/service/RedisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1878#1879#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/WXController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="255" selection-start-line="255" selection-end-line="255" />
+        <state relative-caret-position="-1476">
+          <caret line="134" column="32" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/entity/EnteredDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="313" column="10" selection-start-line="313" selection-start-column="10" selection-end-line="313" selection-end-column="10" />
+        <state relative-caret-position="-360">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding>
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/activityDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="49" column="56" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/entered.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.0.RELEASE/spring-core-5.2.0.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/org/springframework/aop/aspectj/MethodInvocationProceedingJoinPoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/security/CheckRepeatEnteredAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="414" selection-start-line="414" selection-end-line="414" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAroundAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="481" selection-start-line="481" selection-end-line="481" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="484" selection-start-line="484" selection-end-line="484" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weixin/wxpay/EnteredController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
         </state>
       </provider>
     </entry>
