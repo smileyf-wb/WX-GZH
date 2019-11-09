@@ -15,27 +15,38 @@
         </div>
         <div class="weui-form__control-area">
             <div class="weui-cells__group weui-cells__group_form">
-                <div class="weui-cells__title">表单组标题</div>
+                <div class="weui-cells__title"></div>
                 <div class="weui-cells weui-cells_form">
 
-                    <div class="weui-cell">
-                        <div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
-                        <div class="weui-cell__bd">
-                            <input id="name" class="weui-input" placeholder="填写本人姓名"/>
+                    <form id="sureEntered" action="/baoming" method="post" style="display: none">
+                        <input id = "openId" name="openId" value="1232123">
+                        <input id = "name" name="name">
+                        <input id = "sex" name="sex">
+                        <input id = "classes" name="classes">
+                    </form>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
+                            <div class="weui-cell__bd">
+                                <input id="_name" class="weui-input" placeholder="填写本人姓名"/>
+                            </div>
                         </div>
-                    </div>
-                    <div class="weui-cell">
-                        <div class="weui-cell__hd"><label class="weui-label">性别</label></div>
-                        <div class="weui-cell__bd">
-                            <input id="sex" class="weui-input" placeholder="男/女"/>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><label class="weui-label">性别</label></div>
+                            <div class="weui-cell__bd">
+                                <input id="_sex" class="weui-input" placeholder="男/女"/>
+                            </div>
                         </div>
-                    </div>
-                    <div class="weui-cell">
-                        <div class="weui-cell__hd"><label class="weui-label">年级</label></div>
-                        <div class="weui-cell__bd">
-                            <input id="class_no" class="weui-input" placeholder="请填写班级" type="number" pattern="[0-9]*" />
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><label class="weui-label">年级</label></div>
+                            <div class="weui-cell__bd">
+                                <input id="_classes" class="weui-input" placeholder="请填写班级" type="number" pattern="[0-9]*" />
+                            </div>
                         </div>
-                    </div>
+                        <div   class="button-sp-area cell" style="background-color: #A3A3A3" >
+                            <div id = "activityPay"class="weui-btn_cell weui-btn_cell-primary" style="background-color: #CECECE" onclick="baoming()"  >确定</div>
+                        </div>
+
+
                 </div>
             </div>
         </div>
@@ -43,53 +54,21 @@
 
 </div>
 <p th:text=" ${error}">您已报名</p>
-<div   class="button-sp-area cell" style="background-color: #A3A3A3" >
-    <div id = "activityPay"class="weui-btn_cell weui-btn_cell-primary" style="background-color: #CECECE" onclick="payMoney()"  >支付</div>
-</div>
+
 
 <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
 <script type="text/javascript" src="js/weixinpay.js"></script>
 <script>
 
-    function payMoney() {
-        $
-            .ajax({
-                url : "/order",
-                type : "POST",
-                dataType : "json",
-                data : JSON.stringify({
-                    "trade_fee" : "100",
-                    "openId":""
-                }),
-                contentType : 'application/json',
-                success : function(data) {
-                    var code = data.code;
-                    var prepay_id = data.package;
-                    console.log('prepay_id:'+prepay_id);
-                    if(code == 0){
-                        /调起微信支付控件进行支付
-                        if (typeof WeixinJSBridge == "undefined"){
-                            if( document.addEventListener ){
-                                document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
-                            }else if (document.attachEvent){
-                                document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
-                                document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
-                            }
-                        }else{
-                            onBridgeReady();
-                        }
-                    }else{
-                        var message = data.error;
-
-                    }
-
-                },
-                error : function(err) {
-                    console.log(err)
-                }
-
-            })
+    function baoming() {
+        var sureEntered = $("#sureEntered");
+        var name =$("#_name").val();
+        $("#name").val(name);
+        sureEntered.submit();
     }
+
+
+
 
 
     

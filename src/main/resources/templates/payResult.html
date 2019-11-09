@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>支付</title>
+    <link rel="stylesheet" href="css/weui.css"/>
+    <link rel="stylesheet" href="css/weuix.css"/>
+</head>
+<body>
+
+<div class="weui-pay-m">
+    <li class="weui-pay-order">
+        <dl class="weui-pay-line">
+            <dd class="weui-pay-name">天朝科学商学院</dd>
+            <dt class="weui-pay-label">订 单 号：</dt><dd class="weui-pay-e">465464565665</dd>
+        </dl>
+        <dl class="weui-pay-line"><dt class="weui-pay-label">出发时间：</dt><dd class="weui-pay-e">2015年1月20日 12:20</dd></dl>
+        <dl class="weui-pay-line"><dt class="weui-pay-label">应付金额：</dt><dd class="weui-pay-e">￥315.0</dd></dl>
+        <dl class="weui-pay-line"><dt class="weui-pay-label">支付状态:</dt><dd class="weui-pay-e" th:text="${payResult}">支付失败</dd></dl>
+    </li>
+</div>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/weixinpay.js"></script>
+<script>
+
+
+
+
+
+
+</script>
+</body>
+</html>
