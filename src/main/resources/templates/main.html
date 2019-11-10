@@ -49,7 +49,7 @@
                             <i class="fa fa-wrench"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
-                            <li><a href="table_basic.html#">导出</a>
+                            <li><a href="" id="generate-excel">导出</a>
                             </li>
 
                         </ul>
@@ -58,10 +58,11 @@
                 </div>
                 <div class="ibox-content">
 
-                    <table class="table table-hover">
+                    <table class="table table-hover" id="test_table"
+                          >
                         <thead>
                         <tr>
-                            <th>序号</th>
+
                             <th>姓名</th>
                             <th>年龄</th>
                             <th>状态</th>
@@ -103,10 +104,14 @@
 
 <!-- iCheck -->
 <script src="js/plugins/iCheck/icheck.min.js"></script>
-
+<script src="js/demo.page.js"></script>
 <!-- Peity -->
 <script src="js/demo/peity-demo.min.js"></script>
-
+<script src="js/plugins/excel-gen.js"></script>
+<script src="js/plugins/FileSaver.js"></script>
+<script src="js/jszip.min.js"></script>
+<script src="js/bootstrap-table.js"></script>
+<script src="js/bootstrap-table-export.js"></script>
 <script>
     $(document).ready(function () {
         $('.i-checks').iCheck({

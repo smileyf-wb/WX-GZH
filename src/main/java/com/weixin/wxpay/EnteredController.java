@@ -4,7 +4,6 @@ import com.weixin.common.Order;
 import com.weixin.entity.EnteredDetail;
 import com.weixin.wxpay.security.CheckRepeatEntered;
 import com.weixin.wxpay.service.RedisService;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -95,7 +94,24 @@ public class EnteredController {
 
         model.addAttribute("enteredDetailLsit",enteredDetailLsit);
         model.addAttribute("title","报名信息");
-        return new ModelAndView("main","userModel",model);
+        return new ModelAndView("searchData","userModel",model);
+
+    }
+
+    @RequestMapping(value="export")
+    public ModelAndView exportExcel(Model model,@RequestParam(value = "activityName",required = false)String activityName){
+        System.out.println("activityName:"+activityName);
+        List<EnteredDetail> enteredDetailLsit = new ArrayList<>();
+        for(int i=0;i<100;i++){
+            EnteredDetail enteredDetail = new EnteredDetail();
+            enteredDetail.setName("张三");
+            enteredDetail.setSex("女");
+            enteredDetail.setClasses("1020561");
+            enteredDetailLsit.add(enteredDetail);
+        }
+        model.addAttribute("enteredDetailLsit",enteredDetailLsit);
+        model.addAttribute("title","报名信息");
+        return new ModelAndView("searchData","userModel",model);
 
     }
 }
