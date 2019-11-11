@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>支付</title>
+    <link rel="stylesheet" href="css/weui.css"/>
+    <link rel="stylesheet" href="css/weuix.css"/>
+</head>
+<body>
+
+<div class="weui-pay-m">
+    <li class="weui-pay-order">
+        <dl class="weui-pay-line">
+            <dd class="weui-pay-name">天朝科学商学院</dd>
+            <dt class="weui-pay-label">订 单 号：</dt><dd class="weui-pay-e">465464565665</dd>
+        </dl>
+        <dl class="weui-pay-line"><dt class="weui-pay-label">出发时间：</dt><dd class="weui-pay-e">2015年1月20日 12:20</dd></dl>
+        <dl class="weui-pay-line"><dt class="weui-pay-label">应付金额：</dt><dd class="weui-pay-e">￥315.0</dd></dl>
+
+        <div class="weui-pay-area">
+           <!-- <a href="javascript:;" class="weui-pay-c">取消订单</a>
+            <a href="javascript:;" class="weui-pay-v">立即付款</a>-->
+            <button  class="weui-pay-c">取消订单</button>
+            <button onclick="testpayMoney()" class="weui-pay-c">立即付款</button>
+
+        </div>
+    </li>
+</div>
+
+<form id="payResult" action="/pay_finish" method="post" style="display: none">
+    <input id = "reult" name="reult" value="get_brand_wcpay_request:ok">
+    <input id = "openId" name="openId">
+</form>
+
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/weixinpay.js"></script>
+<script>
+
+    function payMoney() {
+        $
+            .ajax({
+                url : "/orders",
+                type : "POST",
+                dataType : "json",
+                data : JSON.stringify({
+                    "trade_fee" : "100",
+                    "openId":""
+                }),
+                contentType : 'application/json',
+                success : function(data) {
+                    var code = data.code;
+                    console.log('prepay_id:'+prepay_id);
+                    if(code == 0){
+                        var appid = data.appId;
+                        var timeStamp = data.timeStamp;
+                        var nonceStr = data.nonceStr;
+                        var  prepay_id= data.package;
+                        var signType = data.signType;
+                        var paySign = data.paySign;
+                        //调起微信支付控件进行支付
+                        if (typeof WeixinJSBridge == "undefined"){
+                            if( document.addEventListener ){
+                                document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+                            }else if (document.attachEvent){
+                                document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                                document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+                            }
+                        }else{
+                            onBridgeReady(appid,timeStamp,nonceStr,prepay_id,signType,paySign);
+                        }
+                    }else{
+                        var message = data.error;
+                        console.log("统一下单接口失败:"+message);
+                    }
+
+                },
+                error : function(err) {
+                    console.log(err)
+                }
+
+            })
+    }
+
+  function testpayMoney() {
+       var payResult = $("#payResult");
+        payResult.submit();
+    }
+
+
+</script>
+</body>
+</html>

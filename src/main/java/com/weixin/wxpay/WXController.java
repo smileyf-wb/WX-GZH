@@ -4,10 +4,13 @@ package com.weixin.wxpay;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.weixin.common.*;
+import com.weixin.entity.EnteredDetail;
 import com.weixin.sdk.WXPayUtil;
 
+import com.weixin.wxpay.service.RedisService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +27,9 @@ import java.util.*;
 public class WXController {
 
     private static Logger log = LoggerFactory.getLogger(WXController.class);
+
+    @Autowired
+    RedisService redisService;
 
     @GetMapping("/tokenCheck")
     public void doGet(HttpServletRequest httpRequest, HttpServletResponse response) {
@@ -132,7 +138,7 @@ public class WXController {
             response.sendRedirect(url);*/
 
         }
-        return "signup";
+        return "activityDetail";
     }
     /**
      * 获取网页授权凭证
@@ -257,9 +263,9 @@ public class WXController {
      * @param
      * @return
      */
-    @RequestMapping(value="orders", method = RequestMethod.GET)
+    @RequestMapping(value="orders", method = RequestMethod.POST)
     @ResponseBody
-    public Map orders(HttpServletRequest request,Order order) {
+    public Map orders(HttpServletRequest request,@RequestBody Order order) {
         try {
             //拼接统一下单地址参数
           String openid =order.getOpenId();
@@ -302,11 +308,12 @@ public class WXController {
 
             //以下内容是返回前端页面的json数据
             String prepay_id = "";//预支付id
+            Map<String, String> payMap = new HashMap<String, String>();
             if (xmlStr.indexOf("SUCCESS") != -1) {
                 Map<String, String> map = WXPayUtil.xmlToMap(xmlStr);
                 prepay_id = (String) map.get("prepay_id");
+                payMap.put("code","0");//统一下单接口调取成功
             }
-            Map<String, String> payMap = new HashMap<String, String>();
             payMap.put("appId", "");
             payMap.put("timeStamp", WXPayUtil.getCurrentTimestamp()+"");
             payMap.put("nonceStr", WXPayUtil.generateNonceStr());
@@ -320,5 +327,7 @@ public class WXController {
         }
         return null;
     }
+
+
 
 }
