@@ -2,9 +2,7 @@ package com.weixin.wxpay;
 
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.weixin.common.*;
-import com.weixin.entity.EnteredDetail;
 import com.weixin.sdk.WXPayUtil;
 
 import com.weixin.wxpay.service.RedisService;
