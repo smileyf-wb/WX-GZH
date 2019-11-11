@@ -7,5 +7,5 @@ public class EnteredDetail {
 
     private String name;
 
-    
+
 }
